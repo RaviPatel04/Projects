@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Spam Detection App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>SPAM DETECTION</h1>
+    <form action="/predict", method="post">
+        <textarea name="sms" id="sms" placeholder="Enter a sms here...">{{sms}}</textarea>
+        <br>
+        <button type="submit">predict</button>
+    </form>
+    {% if prediction %}
+    <h2>Prediction : {{prediction}}</h2>
+    {% endif %}
+</body>
+</html>

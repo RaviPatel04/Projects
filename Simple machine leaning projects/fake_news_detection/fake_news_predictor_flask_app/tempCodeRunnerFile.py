@@ -1,0 +1,1 @@
+"Fake News" if prediction == 1 else "Real News"
