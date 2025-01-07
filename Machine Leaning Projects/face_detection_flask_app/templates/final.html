@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for("static",filename = "css/final.css")}}">
+</head>
+<body>
+    {% if marks<33 %}
+    <h2>Your marks is {{marks}} <br> Sorry!! Better luck next time!!</h2>
+    {% else %}
+    <h2>Your marks is {{marks}} <br> Congratulations!! have cleared the exam!!</h2>
+    {% endif %}
+</body>
+</html>

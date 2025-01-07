@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Form</title>
+    <link rel="stylesheet" href="{{url_for("static",filename = "css/results.css")}}">
+</head>
+<body>
+    <!-- <div class="background-blur"></div> -->
+    <div class="form-container">
+    <h1>Enter Your Marks</h1>
+    <form action="/results" method="post">
+        <label for="physics">Physics:</label>
+        <input type="text" id="physics" name="physics" required><br><br>
+        
+        <label for="chemistry">Chemistry:</label>
+        <input type="text" id="chemistry" name="chemistry" required><br><br>
+        
+        <label for="maths">Maths:</label>
+        <input type="text" id="maths" name="maths" required><br><br>
+        
+        <div class="final">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>
